@@ -1,0 +1,44 @@
+.advantage {
+  --background-color: var(--color-white);
+  --color: inherit;
+  --width: 400px;
+  --padding: 72px;
+
+  display: flex;
+  background-color: var(--background-color);
+  color: var(--color);
+  box-sizing: border-box;
+  width: var(--width);
+  min-height: 384px;
+  padding: var(--padding);
+  text-align: center;
+}
+
+.advantage-color_half-backed {  
+  --background-color: var(--color-half-backed);
+  --color: var(--color-white);
+}
+
+.advantage-color_half-backed-12 {
+  --background-color: var(--color-half-backed-12);
+}
+
+.advantage-color_half-backed-20 {
+  --background-color: var(--color-half-backed-20);
+}
+
+.advantage_with-image {
+  --width: auto;
+  --padding: 0;
+}
+
+.advantage_with-image .advantage__text {
+  width: 400px;
+  min-height: inherit;
+  box-sizing: border-box;
+  padding: 72px;
+}
+
+.advantage__picture {
+
+}

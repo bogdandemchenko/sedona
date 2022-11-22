@@ -1,0 +1,10 @@
+.hotel {
+  width: 340px;
+  height: 438px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.hotel__name {
+  text-transform: none;
+}

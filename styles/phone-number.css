@@ -1,0 +1,21 @@
+.phone-number {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-black);
+} 
+
+.phone-number:hover {
+  color: var(--color-pine-cone);
+}
+
+.phone-number:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-half-backed);
+}
+
+.phone-number:active {
+  color: var(--color-pine-cone-03);
+}

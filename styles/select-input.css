@@ -1,0 +1,22 @@
+.select-input {
+  font-family: inherit;
+  font-size: inherit; 
+  color: inherit;
+  height: 48px;
+  text-align: left;
+  border: 2px solid var(--color-mercury);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.select-input:hover,
+.select-input:focus {
+  border-color: var(--color-half-backed);
+  outline: var(--color-half-backed);
+}
+
+.select-input:active {
+  color: var(--color-mine-shaft-03);
+}

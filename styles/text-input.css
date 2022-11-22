@@ -1,0 +1,49 @@
+.text-input {
+  --font-size: 18px;
+  --font-weight: 400;
+  --width: var(--height);
+  --height: 48px;
+  --color: inherit;
+  --border-color: transparent;
+  --background-color: var(--color-concrete);
+  --border-style: none;
+  --border-color: var(--color);
+  --border-radius: 4px;
+  --border-top-width: 0;
+  --border-right-width: 0;
+  --border-bottom-width: 0;
+  --border-left-width: 0;
+  --box-shadow: none;
+  --outline: inherit;
+
+  font-family: inherit; 
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 1;
+  width: var(--width);
+  height: var(--height);
+  color: var(--color);
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  border-width: var(--border-top-width) var(--border-right-width) var(--border-bottom-width) var(--border-left-width);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  border-radius: var(--border-radius);
+  outline: var(--outline);
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.text-input_variant_outlined {
+  --background-color: transparent;
+  --border-style: solid;
+  --border-top-width: 2px;
+  --border-right-width: 2px;
+  --border-bottom-width: 2px;
+  --border-left-width: 2px;
+}
+
+.text-input_size_xl {
+  --height: 60px;
+}

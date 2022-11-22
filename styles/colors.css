@@ -1,0 +1,22 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-white-03: #FFFFFF4D;
+  --color-white-06: #FFFFFF99;
+  --color-concrete: #F2F2F2;
+  --color-mercury: #E5E5E5;
+  --color-black: #000000;
+  --color-black-06: #00000099;
+  --color-mine-shaft: #333333;
+  --color-mine-shaft-03: #3333334D;
+  --color-pine-cone: #756257;
+  --color-pine-cone-03: #7562574D;
+  --color-kabul: #615048;
+  --color-half-backed: #83B3D3;
+  --color-half-backed-12: #83B3D31F;
+  --color-half-backed-20: #83B3D333;
+  --color-danube: #68A2CA;
+  --color-chelsea-cucumber: #7DB54F;
+  --color-apple: #6C9E42;
+  --color-neon-carrot: #FD922E;
+  --color-persimmon: #FF5757;
+}

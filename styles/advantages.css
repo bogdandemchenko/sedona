@@ -1,0 +1,30 @@
+.advantages {
+  --before-pseudo-element-height: 485px;
+  
+  position: relative;
+  background-color: var(--color-white);
+  padding-top: var(--before-pseudo-element-height);
+}
+
+.advantages::before {  
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--before-pseudo-element-height);
+  background:
+    url("/images/welcome.svg") no-repeat center center,
+    url("/images/divider.svg") no-repeat center bottom,
+    url("/images/rocks.jpg") no-repeat;
+  background-color: var(--color-half-backed);
+}
+
+.advantages__inner {
+  padding-top: 63px;
+  padding-right: 72px;
+  padding-left: 72px;
+  padding-bottom: 80px;
+}
+

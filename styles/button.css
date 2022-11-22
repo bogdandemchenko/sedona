@@ -1,0 +1,140 @@
+.button {
+  --font-size: 16px;
+  --font-weight: 700;
+  --min-width: var(--height);
+  --height: 37px;
+  --color: var(--color-white);
+  --background-color: var(--color-pine-cone);
+  --border-radius: 4px;
+  --border-color: transparent;
+
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 1;
+  text-transform: uppercase;
+  min-width: var(--min-width);
+  height: var(--height);
+  color: var(--color);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button:not(:disabled).button {
+  cursor: pointer;
+}
+
+.button:hover {
+  --background-color: var(--color-kabul);
+}
+
+.button:focus {  
+  --outline: none;
+  --box-shadow: 0 0 0 3px var(--color-half-backed);
+  
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+}
+
+.button:active {
+  --color: var(--color-white-03);
+}
+
+button.button {
+  font-family: inherit;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button_variant_text {
+  --background-color: transparent;
+  --font-weight: 400; // TODO Через переменные
+}
+
+.button_variant_text:hover {
+  --background-color: transparent;
+  --color: var(--color-white-06);
+}
+
+.button_size_l {
+  --height: 48px;
+  --font-size: 16px;
+}
+
+.button_size_xl {
+  --height: 60px;
+  --font-size: 20px;
+  --border-radius: 10px;
+}
+
+.button_color_green {
+  --background-color: var(--color-chelsea-cucumber);
+}
+
+.button_color_green:hover {
+  --background-color: var(--color-apple);
+}
+
+.button_color_green:focus {
+  --box-shadow: 0 0 0 3px var(--color-pine-cone);
+}
+
+.button_color_silver {
+  --background-color: var(--color-concrete);
+  --color: var(--color-black);
+}
+
+.button_color_silver:hover {
+  --background-color: var(--color-concrete);
+}
+
+.button_color_silver:focus {
+  --box-shadow: 0 0 0 3px var(--color-pine-cone);
+}
+
+.button_color_silver:active {
+  --color: var(--color-black);
+}
+
+.button_color_blue {
+  --background-color: var(--color-half-backed);
+}
+
+.button_color_blue:hover {
+  --background-color: var(--color-danube);
+}
+
+.button_color_blue:focus {
+  --box-shadow: 0 0 0 3px var(--color-pine-cone);
+}
+
+.button_apply:focus {
+  --box-shadow: 0 0 0 3px var(--color-white);
+}
+
+.button_variant_outlined {
+  --border-color: var(--background-color);
+  --color: var(--color-black);
+  
+  background-color: transparent;
+  border: 2px solid var(--border-color);
+}
+
+.button_variant_outlined:hover,
+.button_variant_outlined:focus {
+  --border-color: var(--color-half-backed);
+  --box-shadow: none;
+}
+
+.button_variant_outlined.button_active {
+  --border-color: var(--color);
+}
+

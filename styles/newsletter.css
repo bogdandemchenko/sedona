@@ -1,0 +1,12 @@
+.newsletter {
+  height: 411px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 94px 72px 94px 72px;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+}
