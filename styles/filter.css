@@ -1,5 +1,15 @@
 .filter {
   height: 408px;
   box-sizing: border-box;
-  padding: 35px 72px 83px 72px;
+  padding-right: 72px;
+  padding-left: 72px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.filter__heading {
+  margin-top: 35px;
+}
+

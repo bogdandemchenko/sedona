@@ -3,15 +3,23 @@
   --color: inherit;
   --width: 400px;
   --padding: 72px;
+  --flex-direction: column;
 
-  display: flex;
   background-color: var(--background-color);
   color: var(--color);
   box-sizing: border-box;
   width: var(--width);
   min-height: 384px;
   padding: var(--padding);
+  display: flex;
+  flex-direction: var(--flex-direction);
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.advantage_with-image {
+  --flex-direction: row;
 }
 
 .advantage-color_half-backed {  
@@ -39,6 +47,13 @@
   padding: 72px;
 }
 
-.advantage__picture {
-
+.advantage__list {
+  display: flex;
 }
+
+.advantage__number {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+

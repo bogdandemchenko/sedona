@@ -1,0 +1,15 @@
+.social-networks {
+  width: 109px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.social-networks__list {
+  margin: 0;
+  padding: 0;
+}
+
+.social-networks__item {
+  margin: auto 0;
+}

@@ -1,4 +1,23 @@
 .pagination {
   box-sizing: border-box;
   padding: 15px 72px 0px 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  margin-right: auto;
+}
+
+.pagination__item {
+  margin-right: 8px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__paragraph {
+  margin-right: 51px;
 }

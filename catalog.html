@@ -115,16 +115,18 @@
               <legend class="filter-form__legend">Стоимость,₽:</legend>
               <div class="range-input">
                   <input class="text-input text-input_variant_outlined" style="--width: 144px; --border-radius: 4px 0px 0px 4px;" type="text" value="0" name="min-price">
-                  <input class="text-input text-input_variant_outlined" style="--width: 144px; --border-radius: 0px 4px 4px 0px; --border-left-width: 0;" type="text" value="9000" name="max-price">
+                  <input class="text-input text-input_variant_outlined" style="--width: 143px; --border-radius: 0px 4px 4px 0px; --border-left-width: 0;" type="text" value="9000" name="max-price">
               </div>
-              <div class="range-slider-input">
+              <!-- Думаю, что стоит переимновать класс в range-input__slider -->
+              <div class="range-slider-input"> 
                 <button type="button" class="button-toggle button-toggle__min" aria-label="Изменить минимальную цену"></button>
                 <button type="button" class="button-toggle button-toggle__max" aria-label="Изменить максимальную цену"></button>
               </div>
             </fieldset>
             <div class="filter-form__buttons">
+              <span class="filter-form__legend visually-hidden">Кнопки:</span>
               <button class="button button_size_l button_color_blue button_apply" style="--min-width: 160px;">Применить</button>
-              <button class="button button_size_l button_variant_text" style="--min-width: 160px;" type="reset">Сбросить</button>
+              <button class="button button_variant_text" style="--min-width: 160px;" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -154,10 +156,12 @@
         <h2 class="visually-hidden">Гостиницы</h2>
         <ul class="hotels__list resetted-list">
           <li class="hotels__item hotel">
+            <!-- Поменять местами изображение и заголовок, 
+              а в стилях изменить визуальный порядок элеентов с помощью свойства order--> 
             <a class="link-wrapper" href="#">
               <img class="hotel__image" src="images/amara-resort-spa.jpg" width="300" height="206" alt="Фото гостиницы">
             </a>
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3>
+            <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3> 
             <span class="hotel__type">Гостиница</span>
             <span class="hotel__price">От 4000 ₽</span>
             <a class="button" href="#" style="--min-width: 133px;">Подробнее</a>
@@ -298,7 +302,7 @@
               <a class="button button_size_xl button_color_blue" href="?page=10">10</a>
             </li>
           </ul>
-          <p>Гостиниц на странице:</p>
+          <p class="pagination__paragraph">Гостиниц на странице:</p>
           <select class="select-input" style="width: 160px;" name="pages" aria-label="Выбор количества гостиниц на странице">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -317,7 +321,7 @@
       <aside class="newsletter">
         <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
         <b class="newsletter__heading heading heading_color_black">Подпишитесь на рассылку</b>
-        <p class="newsletter__paragraph paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter__paragraph paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <input
               class="text-input text-input_size_xl"

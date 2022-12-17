@@ -2,5 +2,18 @@
   height: 417px;
   text-align: center;
   box-sizing: border-box;
-  padding: 92px 72px 92px 72px;
+  padding-right: 72px;
+  padding-left: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-search__heading {
+  margin-bottom: 29px;
+}
+.hotel-search__paragraph {
+  margin: 0;
+  margin-bottom: 56px;
 }

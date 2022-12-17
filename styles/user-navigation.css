@@ -1,0 +1,11 @@
+.user-navigation {
+    margin-left: auto;
+}
+
+.user-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+

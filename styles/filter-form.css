@@ -1,10 +1,46 @@
+.filter-form {
+  display: flex;
+  margin-top: 45px;
+  justify-content: space-between;
+}
+
 .filter-form__fieldset {
   border: 0 none;
   padding: 0;
   margin: 0;
 }
 
+.filter-form__fieldset:nth-child(3) {
+  margin-left: 161px;
+}
+
 .filter-form__legend {
+  margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.filter-form__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form__item {
+  margin-bottom: 13px;
+}
+
+.filter-form__item:last-child {
+  margin-bottom: 0;
+}
+
+.filter-form__buttons {
+  margin-top: auto;
+  margin-left: 41px;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-input {
+  margin-top: 3px;
+  margin-bottom: 20px;
 }
