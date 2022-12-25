@@ -1,7 +1,11 @@
 .page-footer {
   height: 120px;
   box-sizing: border-box;
-  padding: 30px 72px 30px 72px;
+  padding-right: 72px;
+  padding-left: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 

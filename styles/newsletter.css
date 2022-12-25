@@ -17,10 +17,20 @@
 
 .newsletter__paragraph {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
+  white-space: pre-line;
 }
 
 .newsletter__form {
   display: flex;
   justify-content: center;
+}
+
+.newsletter_catalog {
+  height: 385px;
+  margin-bottom: 65px;
+}
+
+.newsletter__heading_catalog {
+  margin-bottom: 45px;
 }

@@ -1,7 +1,9 @@
 .page-header {
   height: 65px;
   box-sizing: border-box;
-  padding: 0 72px;
+  padding: 0;
+  padding-right: 72px;
+  padding-left: 70px;
   display: flex;
   align-content: stretch;
   align-items: center;

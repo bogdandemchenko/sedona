@@ -2,6 +2,7 @@
   --before-pseudo-element-height: 485px;
   
   position: relative;
+  z-index: 1;
   background-color: var(--color-white);
   padding-top: var(--before-pseudo-element-height);
 }
@@ -15,7 +16,7 @@
   right: 0;
   height: var(--before-pseudo-element-height);
   background:
-    url("/images/welcome.svg") no-repeat center center,
+    url("/images/welcome.svg") no-repeat 370px 52px,
     url("/images/divider.svg") no-repeat center bottom,
     url("/images/rocks.jpg") no-repeat;
   background-color: var(--color-half-backed);
@@ -23,7 +24,6 @@
 
 .advantages__inner {
   height: 282px;
-  align-items: center;
   padding-right: 72px;
   padding-left: 72px;
   text-align: center;
@@ -31,8 +31,9 @@
 
 .advantages__heading {
   display: inline-block;
+  white-space: pre-line;
   margin-top: 63px;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
 }
 
 .advantages__paragraph {

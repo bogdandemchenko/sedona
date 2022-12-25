@@ -1,11 +1,20 @@
 .user-navigation {
     margin-left: auto;
+    width: 250px;
 }
 
 .user-navigation__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 240px;
+    justify-content: space-between;
+}
+
+.user-navigation__item {
+    margin-top: 5px;
+}
+
+.user-navigation__item:last-child {
+    margin: 0;
+    margin-left: 9px;
 }
 

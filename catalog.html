@@ -8,7 +8,7 @@
   <body class="page__body">
     <!-- Шапка и меню навигации -->
     <header class="page-header">
-      <a class="link-wrapper" href="index.html" aria-label="Главная">
+      <a class="logo logo__wrapper link-wrapper" href="index.html" aria-label="Главная">
         <img src="images/logo.svg" width="139" height="70" alt="Логотип Cедоны">
       </a>
       <nav class="site-navigation">
@@ -47,7 +47,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Каталог</h1>
       <!-- Фильтр, а также его фон и хлебные крошки -->
-      <div class="filter blurred-background blurred-background_variant_2">
+      <div class="filter filter__container blurred-background blurred-background_variant_2">
         <b class="filter__heading heading heading_size_l">Гостиницы Седоны</b>
         <nav class="filter__breadcrumbs breadcrumbs">
           <h2 class="visually-hidden">Хлебные крошки</h2>
@@ -63,7 +63,7 @@
           <h3 class="visually-hidden">Фильтрация</h3>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <!-- checkbox -->
-            <fieldset class="filter-form__fieldset">
+            <fieldset class="filter-form__fieldset filter-form__fieldset_infrastructure">
               <legend class="filter-form__legend">Инфраструктура:</legend>
               <ul class="filter-form__list resetted-list">
                 <li class="filter-form__item">
@@ -87,7 +87,7 @@
               </ul>
             </fieldset>
             <!-- radio -->
-            <fieldset class="filter-form__fieldset">
+            <fieldset class="filter-form__fieldset filter-form__fieldset_type-of-housing">
               <legend class="filter-form__legend">Тип жилья:</legend>
               <ul class="filter-form__list resetted-list">
                 <li class="filter-form__item">
@@ -111,14 +111,14 @@
               </ul>
             </fieldset>
             <!-- range -->
-            <fieldset class="filter-form__fieldset">
+            <fieldset class="filter-form__fieldset filter-form__fieldset_value">
               <legend class="filter-form__legend">Стоимость,₽:</legend>
-              <div class="range-input">
+              <div class="range-input range-input_wrapper">
                   <input class="text-input text-input_variant_outlined" style="--width: 144px; --border-radius: 4px 0px 0px 4px;" type="text" value="0" name="min-price">
                   <input class="text-input text-input_variant_outlined" style="--width: 143px; --border-radius: 0px 4px 4px 0px; --border-left-width: 0;" type="text" value="9000" name="max-price">
               </div>
               <!-- Думаю, что стоит переимновать класс в range-input__slider -->
-              <div class="range-slider-input"> 
+              <div class="range-slider range-slider_wrapper"> 
                 <button type="button" class="button-toggle button-toggle__min" aria-label="Изменить минимальную цену"></button>
                 <button type="button" class="button-toggle button-toggle__max" aria-label="Изменить максимальную цену"></button>
               </div>
@@ -135,7 +135,7 @@
       <div class="sorting-view-mode">
         <span class="sorting-view-mode__heading heading heading_color_black">Найдено гостиниц: 38</span>
         <select class="select-input" style="width: 287px;" name="sorting" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
@@ -156,16 +156,17 @@
         <h2 class="visually-hidden">Гостиницы</h2>
         <ul class="hotels__list resetted-list">
           <li class="hotels__item hotel">
-            <!-- Поменять местами изображение и заголовок, 
-              а в стилях изменить визуальный порядок элеентов с помощью свойства order--> 
+            <!-- Поменял местами изображение и заголовок, 
+              а в стилях изменил визуальный порядок флекс-элементов с помощью свойства order, 
+              прочитал, что в блоке <h3> должен быть первым--> 
+            <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3>
             <a class="link-wrapper" href="#">
               <img class="hotel__image" src="images/amara-resort-spa.jpg" width="300" height="206" alt="Фото гостиницы">
             </a>
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3> 
             <span class="hotel__type">Гостиница</span>
             <span class="hotel__price">От 4000 ₽</span>
-            <a class="button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
+            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
+            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
             <div class=hotel__rating>
               <fieldset class="rating-input">
                 <legend class="visually-hidden">Рейтинг отеля Amara Resort & Spa</legend>
@@ -183,18 +184,19 @@
                   <div class="rating-input__focus"></div>
                 </div>
               </fieldset>
-              <span class="hotel__rating-total">Рейтинг: 8,5</span>
             </div>
+            <!-- Поменять класс т.к этот спан вышел из блока hotel__rating -->
+            <span class="hotel__rating-total">Рейтинг: 8,5</span>
           </li>
           <li class="hotels__item hotel">
+            <h3 class="hotel__name heading heading_size_s heading_color_black">Desert Quail Inn</h3>
             <a class="link-wrapper" href="#">
               <img class="hotel__image" src="images/desert-quail-inn.jpg" width="300" height="206" alt="Фото гостиницы">
             </a>
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Desert Quail Inn</h3>
             <span class="hotel__type">Гостиница</span>
             <span class="hotel__price">От 3000 ₽</span>
-            <a class="button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
+            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
+            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
             <div class=hotel__rating>
               <fieldset class="rating-input">
                 <legend class="visually-hidden">Рейтинг отеля Desert Quail Inn</legend>
@@ -212,18 +214,18 @@
                   <div class="rating-input__focus"></div>
                 </div>
               </fieldset>
-              <span class="hotel__rating-total">Рейтинг: 8,9</span>
             </div>
+            <span class="hotel__rating-total">Рейтинг: 8,9</span>
           </li>
           <li class="hotels__item hotel">
+            <h3 class="hotel__name heading heading_size_s heading_color_black">Villas at Poco Diablo</h3>
             <a class="link-wrapper" href="#">
               <img class="hotel__image" src="images/villas-at-poco-diablo.jpg" width="300" height="206" alt="Фото гостиницы">
             </a>
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Villas at Poco Diablo</h3>
             <span class="hotel__type">Гостиница</span>
             <span class="hotel__price">От 2000 ₽</span>
-            <a class="button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="button button_color_green" href="#" style="--min-width: 141px;">В избранном</a>
+            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
+            <a class="hotel__button button button_color_green" href="#" style="--min-width: 141px;">В избранном</a>
             <div class=hotel__rating>
               <fieldset class="rating-input">
                 <legend class="visually-hidden">Рейтинг отеля Villas at Poco Diablo</legend>
@@ -241,18 +243,18 @@
                   <div class="rating-input__focus"></div>
                 </div>
               </fieldset>
-              <span class="hotel__rating-total">Рейтинг: 9,2</span>
             </div>
+            <span class="hotel__rating-total">Рейтинг: 9,2</span>
           </li>
           <li class="hotels__item hotel">
+            <h3 class="hotel__name heading heading_size_s heading_color_black">GreenTree Inn</h3>
             <a class="link-wrapper" href="#">
               <img class="hotel__image" src="images/greentree-inn.jpg" width="300" height="206" alt="Фото гостиницы">
             </a>
-            <h3 class="hotel__name heading heading_size_s heading_color_black">GreenTree Inn</h3>
             <span class="hotel__type">Гостиница</span>
             <span class="hotel__price">От 3000 ₽</span>
-            <a class="button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
+            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
+            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
             <div class=hotel__rating>
               <fieldset class="rating-input">
                 <legend class="visually-hidden">Рейтинг отеля GreenTree Inn</legend>
@@ -270,13 +272,13 @@
                   <div class="rating-input__focus"></div>
                 </div>
               </fieldset>
-              <span class="hotel__rating-total">Рейтинг: 9,2</span>
             </div>
+            <span class="hotel__rating-total">Рейтинг: 9,2</span>
           </li>
         </ul>
         <hr>
         <div class="hotels__load-more-button">
-          <button class="button button_size_xl button_color_blue" type="button" style="--min-width: 620px;">Загрузить ещё</button>
+          <button class="button button_size_xl button_color_blue" type="button" style="--min-width: 620px;">Загрузить еще</button>
         </div>
         <hr>
         <!-- Пагинация -->
@@ -318,10 +320,11 @@
         </nav>
       </section>
       <!-- Подписка -->
-      <aside class="newsletter">
+      <aside class="newsletter newsletter_catalog">
         <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
-        <b class="newsletter__heading heading heading_color_black">Подпишитесь на рассылку</b>
-        <p class="newsletter__paragraph paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <b class="newsletter__heading newsletter__heading_catalog heading heading_color_black">Подпишитесь на рассылку</b>
+        <p class="newsletter__paragraph paragraph">Только полезная информация и никакого спама, 
+          честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <input
               class="text-input text-input_size_xl"
@@ -342,20 +345,20 @@
     </main>
     <!-- Подвал -->
     <footer class="page-footer">
-      <ul class="social-list resetted-list">
-        <li class="social-list__item">
-          <a class="link-wrapper" href="https://twitter.com/htmlacademy_ru">
+      <ul class="social-networks social-networks__list resetted-list">
+        <li class="social-networks__item">
+          <a class="social-networks__link link-wrapper" href="https://twitter.com/htmlacademy_ru">
             <img class="icon" src="images/twitter-logo.svg" width="18" height="14.96" alt="Логотип Twitter">
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="link-wrapper" href="https://www.facebook.com/htmlacademy">
+        <li class="social-networks__item">
+          <a class="social-networks__link link-wrapper" href="https://www.facebook.com/htmlacademy">
             <img class="icon" src="images/facebook-logo.svg" width="10" height=18 alt="Логотип Facebook">
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="link-wrapper" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img class="icon" src="images/youtube-logo.svg" width="20" height="16" alt="Логотип YouTube"
+        <li class="social-networks__item">
+          <a class="social-networks__link link-wrapper" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <img class="icon" src="images/youtube-logo.svg" width="20" height="16" alt="Логотип YouTube">
           </a>
         </li>
       </ul>

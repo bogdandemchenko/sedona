@@ -3,8 +3,50 @@
   height: 438px;
   box-sizing: border-box;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hotel__name {
   text-transform: none;
+  margin: 0;
+  margin-right: 60px;
+  margin-bottom: 16px;
+  order: 2;
+}
+
+.hotel__image {
+  margin: 0;
+  margin-bottom: 16px;
+  order: 1;
+}
+
+.hotel__type {
+  margin: 0;
+  margin-right: 25px;
+  margin-bottom: 16px;
+  order: 3;
+}
+
+.hotel__price {
+  margin: 0;
+  margin-right: 63px;
+  margin-bottom: 16px;
+  order: 3;
+}
+
+.hotel__button {
+  margin: 0;
+  margin-bottom: 16px;
+  order: 4;
+}
+
+.hotel__rating {
+  order: 5;
+}
+
+.hotel__rating-total {
+  order: 5;
 }

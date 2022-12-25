@@ -2,11 +2,12 @@
   --color: inherit;
   --font-size: 30px;
   --line-height: 36px;
+  --text-transform: uppercase;
   
   font-size: var(--font-size);
   font-weight: 700;
   line-height: var(--line-height);
-  text-transform: uppercase;
+  text-transform: var(--text-transform);
   color: var(--color);
 }
 
@@ -18,6 +19,7 @@
 .heading_size_l {
   --font-size: 60px;
   --line-height: 78px;
+  --text-transform: capitalize;
 }
 
 .heading_color_black {

@@ -3,7 +3,8 @@
   padding-left: 72px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .view-mode {

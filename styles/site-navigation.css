@@ -1,8 +1,8 @@
 .site-navigation__list {
   display: flex;
+  margin-left: 46px;
+  width: 308px;
   justify-content: space-between;
-  margin-left: 47px;
-  width: 315px;
 }
 
 .site-navigation__link {
@@ -13,6 +13,11 @@
   text-decoration: none;
   color: var(--color-black); 
 }
+
+.site-navigation__link:nth-child(3) {
+  margin-right: 0;
+}
+
 
 .site-navigation__link:hover {
   color: var(--color-pine-cone);

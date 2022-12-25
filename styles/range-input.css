@@ -1,0 +1,8 @@
+.range-input {
+    display: inline-flex;
+}
+  
+.range-input_wrapper {
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
