@@ -1,0 +1,14 @@
+.page-body {
+    background-color: var(--color-white);
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px var(--color-black-20);
+}
+
+.page-body__page-header {
+    position: relative;
+}
+
+.page-body__page-main {
+    margin-bottom: 47px;
+}

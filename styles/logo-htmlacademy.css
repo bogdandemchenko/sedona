@@ -1,0 +1,22 @@
+.logo-htmlacademy {
+    padding: 18px 22px;
+    color: var(--color-black);
+}
+
+.logo-htmlacademy__img {
+    display: block;
+}
+
+.logo-htmlacademy:hover {
+    color: var(--color-pine-cone);
+}
+
+.logo-htmlacademy:focus {
+    outline: 3px solid var(--color-half-backed);
+    border-radius: 7px;
+}
+
+.logo-htmlacademy:active {
+    opacity: 0.30;
+    outline: none;
+}

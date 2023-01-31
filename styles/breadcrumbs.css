@@ -1,4 +1,45 @@
-.breadcrumbs__link {
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.breadcrumbs__link:not(.breadcrumbs__link_hotels):hover {
+  opacity: 0.60;
+}
+
+.breadcrumbs__link:focus {
+  outline: 3px solid var(--color-half-backed);
+  border-radius: 2px;
+}
+
+.breadcrumbs__link:not(.breadcrumbs__link_hotels):active {
+  opacity: 0.30;
+  outline: none;
+}
+
+.breadcrumbs__link_house {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
-  
+  color: inherit;
+  width: 27px;
+  height: 26px;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: "";
+  background: url("/images/vector-right.svg") no-repeat;
+  opacity: 0.3;
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin-bottom: 1px;
+}
+
+.breadcrumbs__link_hotels {
+  font-size: 16px;
+  padding: 4px 5px;
 }

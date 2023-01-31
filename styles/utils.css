@@ -11,8 +11,18 @@
   overflow: hidden;
 }
 
+.link-wrapper {
+  text-decoration: none;
+  color: inherit;
+}
+
 .resetted-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.section {
+  padding-right: 72px;
+  padding-left: 72px;
 }

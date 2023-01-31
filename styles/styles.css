@@ -13,12 +13,12 @@
 @import url("./phone-number.css");
 @import url("./blurred-background.css");
 @import url("./page.css");
+@import url("./page-body.css");
 @import url("./hotels.css");
 @import url("./hotel.css");
 @import url("./hotel-search.css");
 @import url("./sorting-view-mode.css");
 @import url("./pagination.css");
-@import url("./link-wrapper.css");
 @import url("./select-input.css");
 @import url("./page-header.css");
 @import url("./page-footer.css");
@@ -26,8 +26,11 @@
 @import url("./filter-form.css");
 @import url("./breadcrumbs.css");
 @import url("./social-networks.css");
-@import url("./logo.css");
+@import url("./logo-htmlacademy.css");
+@import url("./logo-sedona.css");
 @import url("./user-navigation.css");
 @import url("./checkbox-input.css");
 @import url("./radio-input.css");
 @import url("./range-input.css");
+@import url("./page-main.css");
+@import url("./page-modal.css");

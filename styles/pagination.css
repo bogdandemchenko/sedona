@@ -1,6 +1,5 @@
 .pagination {
   box-sizing: border-box;
-  padding: 15px 72px 0px 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;

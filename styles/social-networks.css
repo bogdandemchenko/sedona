@@ -1,15 +1,36 @@
 .social-networks {
-  width: 109px;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  left: -11px;
+  column-gap: 4px;
 }
 
-.social-networks__list {
-  margin: 0;
-  padding: 0;
+.social-networks__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-half-backed);
 }
 
-.social-networks__item {
-  margin: auto 0;
+.social-networks__link:hover {
+  color: var(--color-danube);
 }
+
+.social-networks__link:focus {
+  outline: 3px solid var(--color-half-backed);
+  color: var(--color-danube);
+  border-radius: 7px;
+}
+
+.social-networks__link:active {
+  outline: none;
+  opacity: 0.30;
+}
+
+.social-networks__img {
+  display: block;
+}
+
+
+

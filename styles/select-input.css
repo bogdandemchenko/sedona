@@ -8,7 +8,9 @@
   border-radius: 4px;
   padding-right: 14px;
   padding-bottom: 5px;
-  padding-left: 14px;
+  padding-left: 16px;
+  appearance: none;
+  background: var(--color-white) url("/images/vector-down.svg") no-repeat right 19px center;
 }
 
 .select-input:hover,
@@ -18,5 +20,6 @@
 }
 
 .select-input:active {
-  color: var(--color-mine-shaft-03);
+  color: var(--color-mine-shaft-30);
+  border-color: var(--color-mercury);
 }

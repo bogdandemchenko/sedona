@@ -1,9 +1,8 @@
 .hotel-search {
-  height: 417px;
+  padding-top: 95px;
+  padding-bottom: 95px;
   text-align: center;
   box-sizing: border-box;
-  padding-right: 72px;
-  padding-left: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;

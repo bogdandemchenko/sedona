@@ -5,8 +5,10 @@
   background-color: var(--color-half-backed);
   background-image: var(--background-image);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blurred-background_variant_2 {
   --background-image: url("/images/blurred-rock.jpg");
+  background-size: cover;
 }

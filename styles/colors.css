@@ -1,15 +1,18 @@
 :root {
   --color-white: #FFFFFF;
-  --color-white-03: #FFFFFF4D;
-  --color-white-06: #FFFFFF99;
+  --color-white-30: #FFFFFF4D;
+  --color-white-60: #FFFFFF99;
   --color-concrete: #F2F2F2;
   --color-mercury: #E5E5E5;
   --color-black: #000000;
-  --color-black-06: #00000099;
+  --color-black-15: #00000026;
+  --color-black-20: #00000033;
+  --color-black-30: #0000004D;
+  --color-black-60: #00000099;
   --color-mine-shaft: #333333;
-  --color-mine-shaft-03: #3333334D;
+  --color-mine-shaft-30: #3333334D;
   --color-pine-cone: #756257;
-  --color-pine-cone-03: #7562574D;
+  --color-pine-cone-30: #7562574D;
   --color-kabul: #615048;
   --color-half-backed: #83B3D3;
   --color-half-backed-12: #83B3D31F;

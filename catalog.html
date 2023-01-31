@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="uft-8">
+    <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <!-- Шапка и меню навигации -->
-    <header class="page-header">
-      <a class="logo logo__wrapper link-wrapper" href="index.html" aria-label="Главная">
-        <img src="images/logo.svg" width="139" height="70" alt="Логотип Cедоны">
+    <header class="page-body__page-header page-header">
+      <a class="page-header__logo logo-sedona link-wrapper" href="index.html" aria-label="Главная">
+        <img class="logo-sedona__img" src="images/logo.svg" width="139" height="70" alt="Логотип Cедоны">
       </a>
       <nav class="site-navigation">
         <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -24,64 +24,84 @@
             <a class="site-navigation__link site-navigation__link_active">Гостиницы</a>
           </li>
         </ul>
-      </nav>  
-      <nav class="user-navigation">
+      </nav>
+      <nav class="page-header__user-navigation user-navigation">
         <h2 class="visually-hidden">Навигация для пользователя</h2>
         <ul class="user-navigation__list resetted-list">
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#" aria-label="Поиск">
-              <img class="icon" src="images/search.svg" width="18" height="18" alt="Иконка лупа">
+            <a class="user-navigation__link link-wrapper" href="#" aria-label="Поиск">
+              <svg class="user-navigation__img" width="20" height="19" viewBox="0 0 20 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"/>
+              </svg>
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#" aria-label="Избранное">
-              <img class="icon" src="images/favorite.svg" width="18" height="17" alt="Иконка сердце">
+            <a class="user-navigation__link user-navigation__link_favorite link-wrapper" href="#" aria-label="Избранное">
+              <svg class="user-navigation__img" width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"/>
+              </svg>
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="button" href="#" style="--min-width: 160px;">Хочу сюда</a>
+            <a class="user-navigation__button button" href="#" style="--min-width: 160px;"><span class="button__text">Хочу сюда!</span></a>
           </li>
         </ul>
       </nav>
-    </header> 
-    <main class="page-main">
+    </header>
+    <main class="page-body__page-main page-main">
       <h1 class="visually-hidden">Каталог</h1>
       <!-- Фильтр, а также его фон и хлебные крошки -->
-      <div class="filter filter__container blurred-background blurred-background_variant_2">
+      <div class="page-main__filter filter blurred-background blurred-background_variant_2 section">
         <b class="filter__heading heading heading_size_l">Гостиницы Седоны</b>
         <nav class="filter__breadcrumbs breadcrumbs">
           <h2 class="visually-hidden">Хлебные крошки</h2>
           <ul class="breadcrumbs__list resetted-list">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html" aria-label="Главная"></a>
+              <a class="breadcrumbs__link breadcrumbs__link_house link-wrapper" href="index.html" aria-label="Главная">
+                <svg class="breadcrumbs__icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_31961_567)">
+                    <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"/>
+                    <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_31961_567">
+                      <rect width="12" height="12"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link">Гостиницы</a>
+              <a class="breadcrumbs__link breadcrumbs__link_hotels link-wrapper">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <section class="filter__strainer">
           <h3 class="visually-hidden">Фильтрация</h3>
-          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru">
             <!-- checkbox -->
             <fieldset class="filter-form__fieldset filter-form__fieldset_infrastructure">
               <legend class="filter-form__legend">Инфраструктура:</legend>
               <ul class="filter-form__list resetted-list">
                 <li class="filter-form__item">
                   <label class="checkbox-input">
-                    <input class="checkbox-input__control" type="checkbox" name="infrastructure" value="pool" checked>
+                    <input class="checkbox-input__control visually-hidden" type="checkbox" name="infrastructure" value="pool" checked>
                     Бассейн
+                    <span class="checkbox-input__button"></span>
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label class="checkbox-input">
-                    <input class="checkbox-input__control" type="checkbox" name="infrastructure" value="parking" checked>
+                    <input class="checkbox-input__control visually-hidden" type="checkbox" name="infrastructure" value="parking" checked>
                     Парковка
+                    <span class="checkbox-input__button"></span>
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label class="checkbox-input">
-                    <input class="checkbox-input__control" type="checkbox" name="infrastructure" value="wifi">
+                    <input class="checkbox-input__control visually-hidden" type="checkbox" name="infrastructure" value="wifi">
                     Wi-Fi
+                    <span class="checkbox-input__button"></span>
                   </label>
                 </li>
               </ul>
@@ -92,195 +112,287 @@
               <ul class="filter-form__list resetted-list">
                 <li class="filter-form__item">
                   <label class="radio-input">
-                    <input class="radio-input__control" type="radio" name="type" value="hotel" checked>
+                    <input class="radio-input__control visually-hidden" type="radio" name="type" value="hotel" checked>
                     Гостиница
+                    <span class="radio-input__button"></span>
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label class="radio-input">
-                    <input class="radio-input__control" type="radio" name="type" value="motel">
+                    <input class="radio-input__control visually-hidden" type="radio" name="type" value="motel">
                     Мотель
+                    <span class="radio-input__button"></span>
                   </label>
                 </li>
                 <li class="filter-form__item">
                   <label class="radio-input">
-                    <input class="radio-input__control" type="radio" name="type" value="apartments">
+                    <input class="radio-input__control visually-hidden" type="radio" name="type" value="apartments">
                     Апартаменты
+                    <span class="radio-input__button"></span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <!-- range -->
-            <fieldset class="filter-form__fieldset filter-form__fieldset_value">
-              <legend class="filter-form__legend">Стоимость,₽:</legend>
-              <div class="range-input range-input_wrapper">
-                  <input class="text-input text-input_variant_outlined" style="--width: 144px; --border-radius: 4px 0px 0px 4px;" type="text" value="0" name="min-price">
-                  <input class="text-input text-input_variant_outlined" style="--width: 143px; --border-radius: 0px 4px 4px 0px; --border-left-width: 0;" type="text" value="9000" name="max-price">
-              </div>
-              <!-- Думаю, что стоит переимновать класс в range-input__slider -->
-              <div class="range-slider range-slider_wrapper"> 
-                <button type="button" class="button-toggle button-toggle__min" aria-label="Изменить минимальную цену"></button>
-                <button type="button" class="button-toggle button-toggle__max" aria-label="Изменить максимальную цену"></button>
+            <fieldset class="filter-form__fieldset filter-form__fieldset_prices">
+              <legend class="filter-form__legend filter-form__legend_prices">Стоимость, ₽:</legend>
+              <div class="range-input">
+                  <div class="range-input__wrapper">
+                    <label class="range-input__min" aria-label="Ввод минимальной стоимости">
+                      <input class="range-input__control text-input text-input_variant_outlined" style="--width: 144px; --border-radius: 4px 0px 0px 4px; --border-right-width: 0;" type="text" value="0" name="min-price">
+                    </label>
+                    <label class="range-input__max" aria-label="Ввод максимальной стоимости">
+                      <input class="range-input__control text-input text-input_variant_outlined" style="--width: 143px; --border-radius: 0px 4px 4px 0px;" type="text" value="9000" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range-input__slider">
+                    <div class="range-input__bar"> 
+                      <button type="button" class="button-toggle button-toggle__min" aria-label="Изменить минимальную цену"></button>
+                      <button type="button" class="button-toggle button-toggle__max" aria-label="Изменить максимальную цену"></button>
+                    </div>
+                  </div>
               </div>
             </fieldset>
             <div class="filter-form__buttons">
-              <span class="filter-form__legend visually-hidden">Кнопки:</span>
-              <button class="button button_size_l button_color_blue button_apply" style="--min-width: 160px;">Применить</button>
-              <button class="button button_variant_text" style="--min-width: 160px;" type="reset">Сбросить</button>
+              <span class="visually-hidden">Кнопки</span>
+              <button class="button button_size_l button_color_blue button_apply" style="--min-width: 160px;"><span class="button__text">Применить</span></button>
+              <button class="button button_variant_text" type="reset" style="width: 110px;"><span class="button__text">Сбросить</span></button>
             </div>
           </form>
         </section>
       </div>
       <!-- Сортировка и режимы просмотра страницы -->
-      <div class="sorting-view-mode">
+      <div class="page-main__sorting-view-mode sorting-view-mode section">
         <span class="sorting-view-mode__heading heading heading_color_black">Найдено гостиниц: 38</span>
         <select class="select-input" style="width: 287px;" name="sorting" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <div class="view-mode">
-          <a class="button button_size_l button_variant_outlined button_active" href="?view=plates" aria-label="Показать в виде плиток">
-            <img class="view-mode__image" src="images/view-mode-tile.svg" width="16" height="14" alt="Иконка плитки">
-          </a>
-          <a class="button button_size_l button_variant_outlined button_color_silver" href="?view=slideshow" aria-label="Показать в виде слайдшоу">
-            <img class="view-mode__image" src="images/view-mode-slide.svg" width="16" height="14" alt="Иконка слайд">
-          </a>
-          <a class="button button_size_l button_variant_outlined button_color_silver" href="?view=list" aria-label="Показать в виде списке">
-            <img class="view-mode__image" src="images/view-mode-list.svg" width="16" height="14" alt="Иконка список">
-          </a>
+        <div class="sorting-view-mode__view-mode view-mode" aria-hidden="true">
+          <ul class="view-mode__list resetted-list">
+            <li class="view-mode__item">
+              <a class="button button_size_l button_variant_outlined button_active" aria-label="Показать в виде плиток">
+                <img class="view-mode__img" src="images/view-mode-tile.svg" width="16" height="14" alt="Иконка плитки">
+              </a>
+            </li>
+            <li class="view-mode__item">
+              <a class="button button_size_l button_variant_outlined button_color_silver" href="?view=slideshow" aria-label="Показать в виде слайдшоу">
+                <img class="view-mode__img" src="images/view-mode-slide.svg" width="16" height="14" alt="Иконка слайд">
+              </a>
+            </li>
+            <li class="view-mode__item">
+              <a class="button button_size_l button_variant_outlined button_color_silver" href="?view=list" aria-label="Показать в виде списке">
+                <img class="view-mode__img" src="images/view-mode-list.svg" width="16" height="14" alt="Иконка список">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- Каталог -->
-      <section class="hotels">
+      <section class="hotels section">
         <h2 class="visually-hidden">Гостиницы</h2>
         <ul class="hotels__list resetted-list">
-          <li class="hotels__item hotel">
-            <!-- Поменял местами изображение и заголовок, 
-              а в стилях изменил визуальный порядок флекс-элементов с помощью свойства order, 
-              прочитал, что в блоке <h3> должен быть первым--> 
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3>
-            <a class="link-wrapper" href="#">
-              <img class="hotel__image" src="images/amara-resort-spa.jpg" width="300" height="206" alt="Фото гостиницы">
-            </a>
-            <span class="hotel__type">Гостиница</span>
-            <span class="hotel__price">От 4000 ₽</span>
-            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
-            <div class=hotel__rating>
-              <fieldset class="rating-input">
-                <legend class="visually-hidden">Рейтинг отеля Amara Resort & Spa</legend>
-                <div class="rating-input__wrapper">
-                  <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-1" value="1">
-                  <label class="rating-input__button" for="amara-resort-spa-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-2" value="2">
-                  <label class="rating-input__button" for="amara-resort-spa-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-3" value="3">
-                  <label class="rating-input__button" for="amara-resort-spa-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-4" value="4" checked>
-                  <label class="rating-input__button" for="amara-resort-spa-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-5" value="5">
-                  <label class="rating-input__button" for="amara-resort-spa-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
-                  <div class="rating-input__focus"></div>
-                </div>
-              </fieldset>
+          <li class="hotels__item">
+            <div class="hotel">
+              <h3 class="hotel__name heading heading_size_s heading_color_black">Amara Resort & Spa</h3>
+              <a class="hotel__photo" href="#" aria-label="Amara Resort & Spa">
+                <img class="hotel__img" src="images/amara-resort-spa.jpg" width="300" height="206" alt="Фото гостиницы">
+              </a>
+              <table class="hotel__parameters">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>Тип жилья</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="hotel__type">Гостиница</td>
+                    <td class="hotel__price">От 4000 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="hotel__buttons">
+                <ul class="hotel__buttons-list resetted-list">
+                  <a class="hotel__button button" href="#" style="--min-width: 133px;"><span class="button__text">Подробнее</span></a>
+                  <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;"><span class="button__text">В избранное</span></a>
+                </ul>
+              </div>
+              <div class="hotel__rating rating-input">
+                <form class="rating-input__form" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="rating-input__fieldset">
+                    <legend class="visually-hidden">Рейтинг отеля Amara Resort & Spa</legend>
+                    <div class="rating-input__wrapper">
+                      <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-1" value="1">
+                      <label class="rating-input__button" for="amara-resort-spa-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-2" value="2">
+                      <label class="rating-input__button" for="amara-resort-spa-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-3" value="3">
+                      <label class="rating-input__button" for="amara-resort-spa-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-4" value="4" checked>
+                      <label class="rating-input__button" for="amara-resort-spa-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="amara-resort-spa" id="amara-resort-spa-5" value="5">
+                      <label class="rating-input__button" for="amara-resort-spa-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
+                      <div class="rating-input__focus"></div>
+                    </div>
+                  </fieldset>
+                </form>
+                <span class="hotel__total-rating">Рейтинг: 8,5</span>
+              </div>
             </div>
-            <!-- Поменять класс т.к этот спан вышел из блока hotel__rating -->
-            <span class="hotel__rating-total">Рейтинг: 8,5</span>
           </li>
-          <li class="hotels__item hotel">
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Desert Quail Inn</h3>
-            <a class="link-wrapper" href="#">
-              <img class="hotel__image" src="images/desert-quail-inn.jpg" width="300" height="206" alt="Фото гостиницы">
-            </a>
-            <span class="hotel__type">Гостиница</span>
-            <span class="hotel__price">От 3000 ₽</span>
-            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
-            <div class=hotel__rating>
-              <fieldset class="rating-input">
-                <legend class="visually-hidden">Рейтинг отеля Desert Quail Inn</legend>
-                <div class="rating-input__wrapper">
-                  <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-1" value="1">
-                  <label class="rating-input__button" for="desert-quail-inn-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-2" value="2">
-                  <label class="rating-input__button" for="desert-quail-inn-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-3" value="3" checked>
-                  <label class="rating-input__button" for="desert-quail-inn-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-4" value="4">
-                  <label class="rating-input__button" for="desert-quail-inn-4" aria-label="Рейтинг отеля Рейтинг отеля 5 звезд из 5 из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-5" value="5">
-                  <label class="rating-input__button" for="desert-quail-inn-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
-                  <div class="rating-input__focus"></div>
-                </div>
-              </fieldset>
+          <li class="hotels__item">
+            <div class="hotel">
+              <h3 class="hotel__name heading heading_size_s heading_color_black">Desert Quail Inn</h3>
+              <a class="hotel__photo" href="#" aria-label="Desert Quail Inn">
+                <img class="hotel__img" src="images/desert-quail-inn.jpg" width="300" height="206" alt="Фото гостиницы">
+              </a>
+              <table class="hotel__parameters">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>Тип жилья</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="hotel__type">Гостиница</td>
+                    <td class="hotel__price">От 3000 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="hotel__buttons">
+                <ul class="hotel__buttons-list resetted-list">
+                  <a class="hotel__button button" href="#" style="--min-width: 133px;"><span class="button__text">Подробнее</span></a>
+                  <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;"><span class="button__text">В избранное</span></a>
+                </ul>
+              </div>
+              <div class="hotel__rating rating-input">
+                <form class="rating-input__form" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="rating-input__fieldset">
+                    <legend class="visually-hidden">Рейтинг отеля Desert Quail Inn</legend>
+                    <div class="rating-input__wrapper">
+                      <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-1" value="1">
+                      <label class="rating-input__button" for="desert-quail-inn-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-2" value="2">
+                      <label class="rating-input__button" for="desert-quail-inn-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-3" value="3" checked>
+                      <label class="rating-input__button" for="desert-quail-inn-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-4" value="4">
+                      <label class="rating-input__button" for="desert-quail-inn-4" aria-label="Рейтинг отеля Рейтинг отеля 5 звезд из 5 из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="desert-quail-inn" id="desert-quail-inn-5" value="5">
+                      <label class="rating-input__button" for="desert-quail-inn-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
+                      <div class="rating-input__focus"></div>
+                    </div>
+                  </fieldset>
+                </form>
+                <span class="hotel__total-rating">Рейтинг: 8,9</span>
+              </div>
             </div>
-            <span class="hotel__rating-total">Рейтинг: 8,9</span>
           </li>
-          <li class="hotels__item hotel">
-            <h3 class="hotel__name heading heading_size_s heading_color_black">Villas at Poco Diablo</h3>
-            <a class="link-wrapper" href="#">
-              <img class="hotel__image" src="images/villas-at-poco-diablo.jpg" width="300" height="206" alt="Фото гостиницы">
-            </a>
-            <span class="hotel__type">Гостиница</span>
-            <span class="hotel__price">От 2000 ₽</span>
-            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="hotel__button button button_color_green" href="#" style="--min-width: 141px;">В избранном</a>
-            <div class=hotel__rating>
-              <fieldset class="rating-input">
-                <legend class="visually-hidden">Рейтинг отеля Villas at Poco Diablo</legend>
-                <div class="rating-input__wrapper">
-                  <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-1" value="1">
-                  <label class="rating-input__button" for="villas-at-poco-diablo-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-2" value="2" checked>
-                  <label class="rating-input__button" for="villas-at-poco-diablo-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-3" value="3">
-                  <label class="rating-input__button" for="villas-at-poco-diablo-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-4" value="4">
-                  <label class="rating-input__button" for="villas-at-poco-diablo-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-5" value="5">
-                  <label class="rating-input__button" for="villas-at-poco-diablo-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
-                  <div class="rating-input__focus"></div>
-                </div>
-              </fieldset>
+          <li class="hotels__item">
+            <div class="hotel">
+              <h3 class="hotel__name heading heading_size_s heading_color_black">Villas at Poco Diablo</h3>
+              <a class="hotel__photo link-wrapper" href="#" aria-label="Villas at Poco Diablo">
+                <img class="hotel__img" src="images/villas-at-poco-diablo.jpg" width="300" height="206" alt="Фото гостиницы">
+              </a>
+              <table class="hotel__parameters">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>Тип жилья</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="hotel__type">Гостиница</td>
+                    <td class="hotel__price">От 2000 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="hotel__buttons">
+                <ul class="hotel__buttons-list resetted-list">
+                  <a class="hotel__button button" href="#" style="--min-width: 133px;"><span class="button__text">Подробнее</span></a>
+                  <a class="hotel__button button button_color_green" href="#" style="--min-width: 141px;"><span class="button__text">В избранном</span></a>
+                </ul>
+              </div>
+              <div class="hotel__rating rating-input">
+                <form class="rating-input__form" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="rating-input__fieldset">
+                    <legend class="visually-hidden">Рейтинг отеля Villas at Poco Diablo</legend>
+                    <div class="rating-input__wrapper">
+                      <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-1" value="1">
+                      <label class="rating-input__button" for="villas-at-poco-diablo-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-2" value="2" checked>
+                      <label class="rating-input__button" for="villas-at-poco-diablo-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-3" value="3">
+                      <label class="rating-input__button" for="villas-at-poco-diablo-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-4" value="4">
+                      <label class="rating-input__button" for="villas-at-poco-diablo-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="villas-at-poco-diablo" id="villas-at-poco-diablo-5" value="5">
+                      <label class="rating-input__button" for="villas-at-poco-diablo-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
+                      <div class="rating-input__focus"></div>
+                    </div>
+                  </fieldset>
+                </form>
+                <span class="hotel__total-rating">Рейтинг: 9,2</span>
+              </div>
             </div>
-            <span class="hotel__rating-total">Рейтинг: 9,2</span>
           </li>
-          <li class="hotels__item hotel">
-            <h3 class="hotel__name heading heading_size_s heading_color_black">GreenTree Inn</h3>
-            <a class="link-wrapper" href="#">
-              <img class="hotel__image" src="images/greentree-inn.jpg" width="300" height="206" alt="Фото гостиницы">
-            </a>
-            <span class="hotel__type">Гостиница</span>
-            <span class="hotel__price">От 3000 ₽</span>
-            <a class="hotel__button button" href="#" style="--min-width: 133px;">Подробнее</a>
-            <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;">В избранное</a>
-            <div class=hotel__rating>
-              <fieldset class="rating-input">
-                <legend class="visually-hidden">Рейтинг отеля GreenTree Inn</legend>
-                <div class="rating-input__wrapper">
-                  <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-1" value="1">
-                  <label class="rating-input__button" for="greentree-inn-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-2" value="2" checked>
-                  <label class="rating-input__button" for="greentree-inn-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-3" value="3">
-                  <label class="rating-input__button" for="greentree-inn-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-4" value="4">
-                  <label class="rating-input__button" for="greentree-inn-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
-                  <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-5" value="5">
-                  <label class="rating-input__button" for="greentree-inn-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
-                  <div class="rating-input__focus"></div>
-                </div>
-              </fieldset>
+          <li class="hotels__item">
+            <div class="hotel">
+              <h3 class="hotel__name heading heading_size_s heading_color_black">GreenTree Inn</h3>
+              <a class="hotel__photo link-wrapper" href="#" aria-label="GreenTree Inn">
+                <img class="hotel__img" src="images/greentree-inn.jpg" width="300" height="206" alt="Фото гостиницы">
+              </a>
+              <table class="hotel__parameters">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>Тип жилья</th>
+                    <th>Стоимость</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="hotel__type">Гостиница</td>
+                    <td class="hotel__price">От 3000 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="hotel__buttons">
+                <ul class="hotel__buttons-list resetted-list">
+                  <a class="hotel__button button" href="#" style="--min-width: 133px;"><span class="button__text">Подробнее</span></a>
+                  <a class="hotel__button button button_color_blue" href="#" style="--min-width: 141px;"><span class="button__text">В избранное</span></a>
+                </ul>
+              </div>
+              <div class="hotel__rating rating-input">
+                <form class="rating-input__form" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="rating-input__fieldset">
+                    <legend class="visually-hidden">Рейтинг отеля GreenTree Inn</legend>
+                    <div class="rating-input__wrapper">
+                      <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-1" value="1">
+                      <label class="rating-input__button" for="greentree-inn-1" aria-label="Рейтинг отеля 1 звезда из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-2" value="2" checked>
+                      <label class="rating-input__button" for="greentree-inn-2" aria-label="Рейтинг отеля 2 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-3" value="3">
+                      <label class="rating-input__button" for="greentree-inn-3" aria-label="Рейтинг отеля 3 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-4" value="4">
+                      <label class="rating-input__button" for="greentree-inn-4" aria-label="Рейтинг отеля 4 звезды из 5"></label>
+                      <input class="rating-input__control visually-hidden" type="radio" name="greentree-inn" id="greentree-inn-5" value="5">
+                      <label class="rating-input__button" for="greentree-inn-5" aria-label="Рейтинг отеля 5 звезд из 5"></label>
+                      <div class="rating-input__focus"></div>
+                    </div>
+                  </fieldset>
+                </form>
+                <span class="hotel__total-rating">Рейтинг: 9,2</span>
+              </div>
             </div>
-            <span class="hotel__rating-total">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <hr>
         <div class="hotels__load-more-button">
-          <button class="button button_size_xl button_color_blue" type="button" style="--min-width: 620px;">Загрузить еще</button>
+          <button class="button button_size_xl button_color_blue" type="button" style="--min-width: 620px;"><span class="button__text">Загрузить еще</span></button>
         </div>
-        <hr>
         <!-- Пагинация -->
         <nav class="hotels__pagination pagination">
           <h2 class="visually-hidden">Список последовательной нумерации страниц</h2>
@@ -289,19 +401,19 @@
               <a class="button button_size_xl button_color_silver">1</a>
             </li>
             <li class="pagination__item">
-              <a class="button button_size_xl button_color_blue" href="?page=2">2</a>
+              <a class="button button_size_xl button_color_blue" href="?page=2" aria-label="Cтраница 2">2</a>
             </li>
             <li class="pagination__item">
-              <a class="button button_size_xl button_color_blue" href="?page=3">3</a>
+              <a class="button button_size_xl button_color_blue" href="?page=3" aria-label="Cтраница 3">3</a>
             </li>
             <li class="pagination__item">
-              <a class="button button_size_xl button_color_blue" href="?page=4">4</a>
+              <a class="button button_size_xl button_color_blue" href="?page=4" aria-label="Cтраница 4">4</a>
             </li>
             <li class="pagination__item">
-              <a class="button button_size_xl button_color_blue" href="?page=6">...</a>
+              <a class="button button_size_xl button_color_blue">...</a>
             </li>
             <li class="pagination__item">
-              <a class="button button_size_xl button_color_blue" href="?page=10">10</a>
+              <a class="button button_size_xl button_color_blue" href="?page=10" aria-label="Cтраница 10">10</a>
             </li>
           </ul>
           <p class="pagination__paragraph">Гостиниц на странице:</p>
@@ -320,51 +432,70 @@
         </nav>
       </section>
       <!-- Подписка -->
-      <aside class="newsletter newsletter_catalog">
+      <aside class="newsletter newsletter_catalog section">
         <h2 class="visually-hidden">Подписка на новостную рассылку</h2>
         <b class="newsletter__heading newsletter__heading_catalog heading heading_color_black">Подпишитесь на рассылку</b>
         <p class="newsletter__paragraph paragraph">Только полезная информация и никакого спама, 
           честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <input
-              class="text-input text-input_size_xl"
-              style="--width: 600px; --border-radius: 10px 0px 0px 10px;"
-              placeholder="Ваш e-mail"
-              type="email"
-              name="email"
-              aria-label="Адрес электронной почты"
-              required
-            >
-            <button
+            class="newsletter__control text-input text-input_size_xl"
+            style="--width: 600px; --border-radius: 10px 0px 0px 10px;"
+            placeholder="Ваш e-mail"
+            type="email"
+            name="email"
+            aria-label="Адрес электронной почты"
+            required
+          >
+          <button
               class="button button_size_xl button_color_blue"
               style="--min-width: 200px; --border-radius: 0px 10px 10px 0px;"
               type="submit"
-            >Подписаться</button>
+          ><span class="button__text">Подписаться</span></button>
         </form>
       </aside>
     </main>
     <!-- Подвал -->
-    <footer class="page-footer">
-      <ul class="social-networks social-networks__list resetted-list">
+    <footer class="page-footer section">
+      <ul class="page-footer__social-networks social-networks resetted-list">
         <li class="social-networks__item">
-          <a class="social-networks__link link-wrapper" href="https://twitter.com/htmlacademy_ru">
-            <img class="icon" src="images/twitter-logo.svg" width="18" height="14.96" alt="Логотип Twitter">
+          <a class="social-networks__link link-wrapper" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
+            <svg class="social-networks__img" width="18" height="15" viewBox="0 0 18 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
+            </svg>
           </a>
         </li>
         <li class="social-networks__item">
-          <a class="social-networks__link link-wrapper" href="https://www.facebook.com/htmlacademy">
-            <img class="icon" src="images/facebook-logo.svg" width="10" height=18 alt="Логотип Facebook">
+          <a class="social-networks__link social-networks__link_facebook link-wrapper" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
+            <svg class="social-networks__img" width="10" height="18" viewBox="0 0 10 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
+            </svg>
           </a>
         </li>
         <li class="social-networks__item">
-          <a class="social-networks__link link-wrapper" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img class="icon" src="images/youtube-logo.svg" width="20" height="16" alt="Логотип YouTube">
+          <a class="social-networks__link link-wrapper" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="YouTube">
+            <svg class="social-networks__img" width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="phone-number" href="tel:78128121212">+7 (812) 812-12-12</a>
-      <a class="link-wrapper" href="https://htmlacademy.ru">
-        <img src="images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип «.htmlacademy»">
+      <a class="page-footer__logo logo-htmlacademy link-wrapper" href="https://htmlacademy.ru" aria-label="htmlacademy">
+        <svg class="logo-htmlacademy__img" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
+          <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"/>
+          <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
+          <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"/>
+          <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7V12.7Z"/>
+          <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"/>
+          <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"/>
+          <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"/>
+          <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"/>
+          <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"/>
+          <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"/>
+          <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"/>
+        </svg>
       </a>
     </footer>
   </body>

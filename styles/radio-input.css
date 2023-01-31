@@ -1,3 +1,39 @@
-.radio-input__control {
-    margin-right: 20px;
+.radio-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+    column-gap: 19px;
 }
+
+.radio-input__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.radio-input__control:focus + .radio-input__button {
+    outline: 3px solid var(--color-half-backed);
+}
+
+.radio-input:active {
+    outline: none;
+}
+
+.radio-input__control:checked + .radio-input__button::after {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("/images/eclipse-dark.svg") no-repeat;
+}
+
+
+

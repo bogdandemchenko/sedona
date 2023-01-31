@@ -1,5 +1,6 @@
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -15,36 +16,40 @@
 }
 
 .filter-form__fieldset_type-of-housing {
-  margin-right: 40px;
+  margin-right: 102px;
 }
 
-.filter-form__fieldset_value {
-  margin-right: 25px;
-  margin-left: 70px;
+.filter-form__fieldset_prices {
+  margin-right: 17px;
 }
 
 .filter-form__legend {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
+  padding: 0;
   font-size: 20px;
   font-weight: 700;
+}
+
+.filter-form__legend_prices {
+  margin-bottom: 35px;
 }
 
 .filter-form__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
 }
 
-.filter-form__item {
-  margin-bottom: 11px;
-}
-
-.filter-form__item:last-child {
-  margin-bottom: 0;
+.filter-form__range-input {
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .filter-form__buttons {
   margin-top: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
 }
-

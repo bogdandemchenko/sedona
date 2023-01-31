@@ -5,6 +5,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--color-black);
+  padding: 15px;
 } 
 
 .phone-number:hover {
@@ -12,10 +13,11 @@
 }
 
 .phone-number:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--color-half-backed);
+  outline: 3px solid var(--color-half-backed);
+  border-radius: 7px;
 }
 
 .phone-number:active {
-  color: var(--color-pine-cone-03);
+  opacity: 0.30;
+  outline: none;
 }

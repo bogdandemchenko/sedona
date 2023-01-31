@@ -1,14 +1,16 @@
 .sorting-view-mode {
-  padding-right: 72px;
-  padding-left: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
 }
 
-.view-mode {
+.sorting-view-mode__view-mode {
   margin-left: 81px;
+}
+
+.view-mode__list {
+  display: flex;
+  column-gap: 8px;
 }
 
 .sorting-view-mode__heading {

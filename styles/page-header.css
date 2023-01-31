@@ -1,12 +1,21 @@
 .page-header {
-  height: 65px;
+  min-width: 65px;
+  padding-top: 14px;
+  padding-right: 70px;
+  padding-bottom: 14px;
+  padding-left: calc(70px + 171px);
   box-sizing: border-box;
-  padding: 0;
-  padding-right: 72px;
-  padding-left: 70px;
   display: flex;
-  align-content: stretch;
   align-items: center;
 }
 
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  z-index: 2;
+}
 
+.page-header__user-navigation {
+  margin-left: auto;
+}

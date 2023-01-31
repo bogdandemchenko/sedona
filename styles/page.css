@@ -6,9 +6,4 @@
   background-color: var(--color-mercury);
 }
 
-.page__body {
-  background-color: var(--color-white);
-  width: 1200px;
-  margin: 0 auto;
-}
 

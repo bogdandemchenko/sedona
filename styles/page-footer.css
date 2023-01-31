@@ -1,12 +1,21 @@
 .page-footer {
-  height: 120px;
+  min-height: 121px;
   box-sizing: border-box;
-  padding-right: 72px;
-  padding-left: 72px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
+.page-footer__social-networks {
+  position: relative;
+  margin-right: 220px;
+  margin-bottom: 4px;
+}
+
+.page-footer__logo {
+  position: relative;
+  left: 22px;
+  margin-left: auto;
+}
 
 

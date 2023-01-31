@@ -1,4 +1,42 @@
-.checkbox-input__control {
-    margin-right: 18px;
+.checkbox-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+    column-gap: 19px;
 }
-  
+
+.checkbox-input__button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: var(--color-white);
+}
+
+.checkbox-input__control:checked + .checkbox-input__button::after {
+    position: absolute;
+    right: 3px;
+    width: 13px;
+    height: 10px;
+    content: "";
+    background: url("/images/vector-check-mark.svg") no-repeat;
+}
+
+.checkbox-input__control:hover + .checkbox-input__button {
+    background-color: var(--color-white-60);
+}
+
+.checkbox-input__control:focus + .checkbox-input__button {
+    background-color: var(--color-white-60);
+    outline: 3px solid var(--color-half-backed);
+}
+
+.checkbox-input__control:active + .checkbox-input__button {
+    background-color: var(--color-white-30);
+    outline: none;
+}

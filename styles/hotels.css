@@ -1,8 +1,6 @@
 .hotels__list {
   box-sizing: border-box;
-  margin-bottom: 35px;
-  padding-right: 72px;
-  padding-left: 72px;
+  margin-bottom: 34px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   column-gap: 18px;
@@ -11,10 +9,23 @@
 
 .hotels__load-more-button {
   text-align: center;
-  box-sizing: border-box;
-  padding-right: 72px;
-  padding-left: 72px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
+.hotels__load-more-button::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 0px;
+  border: 1px solid var(--color-mercury);
+  opacity: 0.7;
+}
+
+.hotels__load-more-button::after {
+  content: "";
+  height: 0px;
+  margin-top: 30px;
+  display: block;
+  border: 1px solid var(--color-mercury);
+  opacity: 0.7;
+}
