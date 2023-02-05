@@ -3,15 +3,11 @@
     color: var(--color-black);
 }
 
-.logo-htmlacademy__img {
-    display: block;
-}
-
 .logo-htmlacademy:hover {
     color: var(--color-pine-cone);
 }
 
-.logo-htmlacademy:focus {
+.logo-htmlacademy:focus-visible {
     outline: 3px solid var(--color-half-backed);
     border-radius: 7px;
 }

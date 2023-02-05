@@ -31,7 +31,7 @@
     background-color: var(--color-white-60);
 }
 
-.checkbox-input__control:focus + .checkbox-input__button {
+.checkbox-input__control:focus-visible + .checkbox-input__button {
     background-color: var(--color-white-60);
     outline: 3px solid var(--color-half-backed);
 }

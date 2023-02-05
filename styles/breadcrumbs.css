@@ -9,7 +9,7 @@
   opacity: 0.60;
 }
 
-.breadcrumbs__link:focus {
+.breadcrumbs__link:focus-visible {
   outline: 3px solid var(--color-half-backed);
   border-radius: 2px;
 }

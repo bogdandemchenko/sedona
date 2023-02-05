@@ -20,17 +20,17 @@
   order: 1;
 }
 
-.hotel__photo:focus {
+.hotel__photo:focus-visible {
   outline: 3px solid var(--color-half-backed);
+}
+
+.hotel__photo:hover {
+  opacity: 0.60;
 }
 
 .hotel__photo:active {
   outline:none;
   opacity: 0.30;
-}
-
-.hotel__photo:hover .hotel__img {
-  opacity: 0.60;
 }
 
 .hotel__parameters {
@@ -60,6 +60,9 @@
 
 .hotel__rating {
   order: 5;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
 }
 
 .hotel__total-rating {

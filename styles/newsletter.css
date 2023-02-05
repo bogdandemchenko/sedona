@@ -30,26 +30,9 @@
 
 .newsletter__form {
   display: flex;
-  justify-content: center;
   color: var(--color-black);
 }
 
-.newsletter__control::placeholder {
-  color: var(--color-black-60);
-}
-
-.newsletter__control:hover {
-  background-color: var(--color-mercury);
-}
-
-.newsletter__control:focus {
-  background-color: var(--color-mercury);
-  outline: 3px solid var(--color-half-backed);
-}
-
-.newsletter__control:invalid:not(:placeholder-shown) {
-  outline: 2px solid var(--color-persimmon);
-}
 
 
 

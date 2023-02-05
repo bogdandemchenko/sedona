@@ -27,10 +27,14 @@
 @import url("./breadcrumbs.css");
 @import url("./social-networks.css");
 @import url("./logo-htmlacademy.css");
-@import url("./logo-sedona.css");
 @import url("./user-navigation.css");
 @import url("./checkbox-input.css");
 @import url("./radio-input.css");
 @import url("./range-input.css");
 @import url("./page-main.css");
 @import url("./page-modal.css");
+@import url("./overlay.css");
+@import url("./date-input.css");
+@import url("./number-input.css");
+@import url("./hotel-search-form.css");
+@import url("./tooltip.css");

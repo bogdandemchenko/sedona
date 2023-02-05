@@ -10,17 +10,18 @@
     position: relative;
 }
   
-.range-input__min::after {
-    content: "от";
+.range-input__min {
     font-size: 18px;
+    text-transform: lowercase;
     color: var(--color-white-30);
     position: absolute;
     top: 12px;
     right: 158px;
 }
 
-.range-input__max::after {
-    content: "до";
+.range-input__max {
+    font-size: 18px;
+    text-transform: lowercase;
     color: var(--color-white-30);
     position: absolute;
     top: 12px;
@@ -64,8 +65,8 @@
     right: 50px;
 }
 
-.button-toggle__min:focus,
-.button-toggle__max:focus {
+.button-toggle__min:focus-visible,
+.button-toggle__max:focus-visible {
     box-shadow: 0 0 0 3px var(--color-half-backed);
     outline: none;
 }

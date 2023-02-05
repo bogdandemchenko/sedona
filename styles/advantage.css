@@ -131,10 +131,6 @@
   justify-content: center;
 }
 
-.advantage__picture {
-  display: block;
-}
-
 .advantage_with-image {
   --flex-direction: row;
   --width: auto;

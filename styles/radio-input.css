@@ -17,7 +17,7 @@
     background-color: var(--color-white);
 }
 
-.radio-input__control:focus + .radio-input__button {
+.radio-input__control:focus-visible + .radio-input__button {
     outline: 3px solid var(--color-half-backed);
 }
 

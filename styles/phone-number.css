@@ -12,7 +12,7 @@
   color: var(--color-pine-cone);
 }
 
-.phone-number:focus {
+.phone-number:focus-visible {
   outline: 3px solid var(--color-half-backed);
   border-radius: 7px;
 }

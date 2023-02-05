@@ -48,7 +48,3 @@
     align-items: center;
     background: url("/images/number-of-likes.svg") no-repeat;
 }
-
-.user-navigation__img {
-    display: block;
-}

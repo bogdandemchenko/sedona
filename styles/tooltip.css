@@ -1,0 +1,43 @@
+.tooltip {
+    --background-color: var(--color-mine-shaft);
+    --tail-height: 10px;
+
+    display: none;
+    position: absolute;
+    min-width: 256px;
+    white-space: pre-line;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-white);
+    padding: 20px 18px 23px 22px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    transform: translateY(var(--tail-height));
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px var(--color-black-30);
+}
+
+/* Удалить правило ниже, после написания JS */
+
+.button:hover + .tooltip,
+.button:focus-visible + .tooltip {
+    display: block;
+}
+
+.tooltip::before {
+    display: block;
+    position: absolute;
+    top: calc(var(--tail-height) * -2);
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 0;
+    border: var(--tail-height) solid transparent;
+    border-bottom-color: var(--background-color);
+}
+
+.tooltip_visible {
+    display: block;
+}
+

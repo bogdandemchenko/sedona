@@ -14,7 +14,7 @@
 }
 
 .select-input:hover,
-.select-input:focus {
+.select-input:focus-visible {
   border-color: var(--color-half-backed);
   outline: var(--color-half-backed);
 }
