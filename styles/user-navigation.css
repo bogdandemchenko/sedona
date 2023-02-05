@@ -46,5 +46,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/images/number-of-likes.svg") no-repeat;
+    background: url("../images/number-of-likes.svg") no-repeat;
 }

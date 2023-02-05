@@ -31,7 +31,7 @@
 
 .breadcrumbs__item:not(:first-child)::before {
   content: "";
-  background: url("/images/vector-right.svg") no-repeat;
+  background: url("../images/vector-right.svg") no-repeat;
   opacity: 0.3;
   display: inline-block;
   width: 5px;

@@ -15,9 +15,9 @@
   right: 0;
   height: var(--before-pseudo-element-height);
   background:
-    url("/images/welcome.svg") no-repeat 370px 52px,
-    url("/images/divider.svg") no-repeat center bottom,
-    url("/images/rocks.jpg") no-repeat;
+    url("../images/welcome.svg") no-repeat 370px 52px,
+    url("../images/divider.svg") no-repeat center bottom,
+    url("../images/rocks.jpg") no-repeat;
   background-color: var(--color-half-backed);
 }
 

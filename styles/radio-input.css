@@ -32,7 +32,7 @@
     content: "";
     width: 10px;
     height: 10px;
-    background: url("/images/eclipse-dark.svg") no-repeat;
+    background: url("../images/eclipse-dark.svg") no-repeat;
 }
 
 

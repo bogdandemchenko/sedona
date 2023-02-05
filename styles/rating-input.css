@@ -16,7 +16,7 @@
   margin-top: 9px;
   margin-right: 7px;
   margin-bottom: 9px;
-  background-image: url("/images/star.svg");
+  background-image: url("../images/star.svg");
   background-size: 20px auto;
   background-repeat: repeat-x;
 }
@@ -64,11 +64,11 @@
 
 .rating-input__control:checked + .rating-input__button,
 .rating-input__button:hover {
-  background-image: url("/images/star-colored.svg");
+  background-image: url("../images/star-colored.svg");
 }
 
 .rating-input__button:hover ~ .rating-input__button {
-  background-image: url("/images/star.svg");
+  background-image: url("../images/star.svg");
 }
 
 /* Options */

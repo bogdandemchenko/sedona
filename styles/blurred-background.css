@@ -1,5 +1,5 @@
 .blurred-background {
-  --background-image: url("/images/blurred-desert.jpg");
+  --background-image: url("../images/blurred-desert.jpg");
   
   color: var(--color-white);
   background-color: var(--color-half-backed);
@@ -9,5 +9,5 @@
 }
 
 .blurred-background_variant_2 {
-  --background-image: url("/images/blurred-rock.jpg");
+  --background-image: url("../images/blurred-rock.jpg");
 }

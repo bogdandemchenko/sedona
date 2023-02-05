@@ -10,7 +10,7 @@
   padding-bottom: 5px;
   padding-left: 16px;
   appearance: none;
-  background: var(--color-white) url("/images/vector-down.svg") no-repeat right 19px center;
+  background: var(--color-white) url("../images/vector-down.svg") no-repeat right 19px center;
 }
 
 .select-input:hover,

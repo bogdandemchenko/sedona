@@ -24,7 +24,7 @@
     width: 13px;
     height: 10px;
     content: "";
-    background: url("/images/vector-check-mark.svg") no-repeat;
+    background: url("../images/vector-check-mark.svg") no-repeat;
 }
 
 .checkbox-input__control:hover + .checkbox-input__button {
