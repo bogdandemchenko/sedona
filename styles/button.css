@@ -91,13 +91,13 @@ a.button {
 }
 
 button.button_variant_text:not(:disabled):hover,
-a.button[href]:hover {
+a.button_variant_text[href]:hover {
   --background-color: transparent;
   --color: var(--color-white-60);
 }
 
 button.button_variant_text:not(:disabled):active,
-a.button[href]:active {
+a.button_variant_text[href]:active {
   --background-color: transparent;
   --color: var(--color-white-30);
 }
@@ -112,9 +112,8 @@ a.button[href]:active {
   width: var(--width);
 }
 
-button.button_variant_outlined:not(:disabled):hover,
-.button_variant_outlined:not(:disabled):focus-visible,
-a.button[href]:hover {
+a.button_variant_outlined[href]:hover ,
+.button_variant_outlined:not(:disabled):focus-visible {
   --border-color: var(--color-half-backed);
 
   box-shadow: none;
@@ -145,7 +144,7 @@ a.button[href]:hover {
 }
 
 button.button_color_green:not(:disabled):hover,
-a.button[href]:hover {
+a.button_color_green[href]:hover {
   --background-color: var(--color-apple);
 }
 
@@ -159,7 +158,7 @@ a.button[href]:hover {
 }
 
 button.button_color_silver:not(:disabled):hover,
-a.button[href]:hover {
+a.button_color_silver[href]:hover {
   --background-color: var(--color-mercury);
 }
 
@@ -168,7 +167,7 @@ a.button[href]:hover {
 }
 
 button.button_color_silver:not(:disabled):active,
-a.button[href]:active {
+a.button_color_silver[href]:active {
   --color: var(--color-black-30);
 }
 
@@ -177,7 +176,7 @@ a.button[href]:active {
 }
 
 button.button_color_blue:not(:disabled):hover,
-a.button[href]:hover {
+a.button_color_blue[href]:hover {
   --background-color: var(--color-danube);
 }
 
